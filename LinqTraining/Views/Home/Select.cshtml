@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Select";
+}
+
+<h1>Select</h1>
+@{
+    var list = ViewBag.MyList;
+    foreach (var item in list)
+    {
+        <div>
+        <span>@item.Name</span>
+        <span>@item.Family</span>
+        
+        </div>
+    }
+}
+
